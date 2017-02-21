@@ -1,0 +1,1176 @@
+@leftcolor: #3b3a3f;
+@leftfont: #49b67f;
+@leftfont1: #c0e9d7;
+@listcolor: #4ab682;
+@listcolor1: #cdcbcc;
+@listcolor2: #757575;
+@mouseover: #c0e9d7;
+.listcolor{
+	color:@listcolor;
+}
+.listcolor:hover{
+	color: #e26841;
+	text-decoration: underline;
+}
+.listcolor1:hover{
+	color: #e26841;
+	text-decoration: underline;
+}
+.tabcolor{
+	background :#e26841;
+}
+
+.loadbox{
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index: 10000;
+	text-align: center;
+	padding: 30px;
+	//background:rgba(255,255,255,.2);
+}
+.loading{
+	background:#000;
+	border-radius:4px;
+	padding:15px 20px;
+	position: absolute;
+	top:50%;
+	left:50%;
+	color:#fff;
+	-ms-transform:translate(-50%,-50%);
+	-webkit-transform:translate(-50%,-50%);
+	-moz-transform:translate(-50%,-50%);
+	-o-transform:translate(-50%,-50%);
+	transform:translate(-50%,-50%);
+}
+
+
+.rukou_box{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	padding-left: 180px;
+	.student_left{
+		margin-left: -180px;
+		float: left;
+		width:180px;
+		min-width: 180px;
+		background: @leftcolor;
+		background-size: cover;
+		min-height: 635px;
+		padding-bottom: 150px;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    bottom: 0;
+	    padding-left: 180px;
+		.ruokou_logo{
+			position: relative;
+			.ruokou_bglogo{
+				width:100%;
+				height:100%;
+				display: block;
+			}
+			.ruokou_smlogo{
+				width: 110px;
+				height: 85px;
+				position:absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				margin :auto;
+				p{
+					text-align: center;
+					margin-top: 10px;
+					color: @leftfont1;
+				}
+			}
+		}
+		.rukou_list{
+			ul{
+				background: @leftcolor;
+				max-height: 550px;
+				overflow-y: auto;
+				li{
+					a{
+						display: block;
+						color: @leftfont1;
+						padding : 20px 25px;
+						border-bottom: 1px solid #333;
+						img{
+							display:inline-block;
+							vertical-align: middle;
+							margin-right:5px;
+						}	
+					}
+					a.active{
+						color: @leftfont;
+						background: #fff;
+						border-left: 5px solid @leftfont;
+					}
+				}
+			}
+		}
+		.rukou_set{
+			position: absolute;
+			bottom:80px;
+			img{
+				padding-right: 15px;
+				vertical-align: middle;
+			}
+			a{
+				display: block;
+				padding:20px 92px 20px 25px;
+			}
+			span{
+				color : @leftfont1;
+			}
+		}
+	}
+	.student_right{
+		width: 100%;
+		min-width: 800px;
+		float: left;
+		min-height: 800px;
+		max-height: 100%;
+		overflow-y: auto;
+		header{
+		 	padding:15px 20px;
+		 	background: #fff;
+		 	border-bottom: 3px solid @listcolor;
+		 	.span1{
+		 		font-size: 20px;
+		 		font-weight: 600;
+		 	}
+		 	span{
+		 		padding-right: 20px;
+		 	}
+		 	.rukou_right{
+				float: right;
+				
+				img{
+					padding-right: 10px;
+					vertical-align: middle;
+				}
+				.button{
+					color: @listcolor;
+				}
+				.right_name{
+					float: left;
+					min-width: 60px;
+					padding:15px 10px;
+					margin-right: 10px;
+					margin-top: -15px;
+					position: relative;
+					span{
+						padding: 0;
+					}
+					ul{
+						width: 100%;
+						position:absolute;
+						left: 0;
+						top: 50px;
+						display:none;
+						li{
+							text-align: center;
+							padding:10px;
+							background: #ddd;
+						}
+					}
+				}
+				.right_name:hover{
+					background: #ddd;
+					cursor:pointer;
+					ul{
+						display:block;
+						background: @leftcolor;
+						li:hover{
+							background: #ccc;
+							color:@listcolor;
+							cursor: pointer;
+						}
+					}
+
+				}
+		 	}
+		}
+		.student_center{
+			padding:9px 20px;
+			
+			p{
+				margin-top: 5px;
+				.span2{
+					color: @listcolor2;
+				}
+				.fanhui{
+					float: right;
+					margin-right: 40px;
+				}
+			}
+			.search{
+				margin-top: 10px;
+				padding:10px 20px;
+				background: #fff;
+				overflow: hidden;
+				input{
+					padding: 5px;
+					margin:0 35px 0 15px;
+					border: 1px solid @listcolor1;
+				}
+				select{
+					padding:3px 5px;
+					border: 1px solid @listcolor1;
+					margin:0 20px 0 10px;
+				}
+				.span3{
+					display:inline-block;
+					padding: 10px 40px;
+					background: @listcolor;
+					color: #fff;
+					cursor: pointer;
+					&:disabled{
+						background:#ccc;
+					}
+				}
+				.activeinfo_right{
+					float:right;
+					margin-top: 40px;
+					.info_time{
+						overflow: hidden;
+						li{
+						    float: left;
+						    margin-left: 10px;
+						    background: #4ab682;
+						    a{
+						    	display: inline-block;
+						    	padding: 10px 20px;
+						    	color: #fff;
+						    }
+						}
+					}
+				}
+				.span4{
+					display: inline-block;
+					color: #fff;
+					background: @listcolor;
+					float: right;
+					a{
+						display: inline-block;
+						padding: 10px 20px;
+						background : @listcolor;
+						color: #fff;
+					}
+				}
+				.info_img{
+					width:80px;
+					height: 80px;
+					float: left;
+					display: block;
+					border-radius: 50%;
+					border: 1px solid @listcolor;
+					overflow: hidden;
+					position: relative;
+					img{
+						width: 80px;
+						height:80px;
+						display:block;
+						border-radius: 50%;
+						// position: absolute;
+						// top: 0;
+						// bottom: 0;
+						// left: 0;
+						// right: 0;
+						// margin: auto;
+					}
+				}
+				.info_body{
+					float: left;
+					margin-left: 20px;
+					margin-top: 5px;
+					p{
+						margin:10px 0;
+						span{
+							display:inline-block;
+							margin-right: 10px;
+							color: @listcolor2;
+						}
+						.info_name{
+							font-size: 18px;
+							color: @listcolor;
+
+						}
+					}
+				}
+				.activeinfo_body{
+					float: left;
+					margin-left: 20px;
+					p{
+						margin:5px 0;
+						span{
+							display:inline-block;
+							margin-right: 10px;
+							color: @listcolor2;
+						}
+						.activeinfo_name{
+							font-size: 12px;
+							color: @listcolor;
+						}
+					}
+				}
+				.activeinfo_add{
+					width: 120px;
+					height: 80px;
+					border: 1px solid @listcolor1;
+					float: left;
+					text-align: center;
+					line-height: 80px;
+					span{
+						display: block;
+						font-size: 70px;
+						color: @listcolor1;
+						img{
+							width:120px;
+							height: 80px;
+						}
+					}
+				}
+				.search_right{
+					float: right;
+					margin-top: 40px;
+					span{
+						display:inline-block;
+						padding: 10px 20px;
+						img{
+							vertical-align: middle;
+							height: 20px;
+						}
+					}
+					.info_time{
+						float: right;
+						li{
+							float: left;
+							margin-left: 10px;
+							background:@listcolor;
+							a{
+								display: inline-block;
+								padding: 10px 20px;
+								color: #fff;
+							}
+						}
+					}
+					.search_span{
+						color: @listcolor;
+					}
+					.onestudent_span{
+						display: block;
+						padding: 8px 25px;
+						background: @listcolor;
+						border-radius: 10px;
+					}
+				}
+				.cludinput{
+					width: 80px;
+					margin-right:15px;
+				}
+				.cludinput1{
+					width: 80px;
+					margin-right:50px;
+				}
+				
+			}
+			.onestudent_list{
+				margin-top: 15px;
+				background: #fff;
+				padding: 20px;
+				overflow: hidden;
+				height: 100%;
+				.clubcreate{
+					margin-top: 80px;
+				}
+				table{
+					width: 100%;
+					border-collapse:collapse;
+					tr{
+						td{
+							padding:10px 20px;
+							border:1px solid @listcolor1;
+							color: @listcolor2;
+							input[type="text"]{
+								width: 150px;
+								outline: none; 
+								padding:3px 10px;
+								border: 1px solid @listcolor1;
+							}
+							input[type="radio"]{
+								display: inline-block;
+								margin-left:20px; 
+								border: 1px solid @listcolor1;
+							}
+							.createactive_span{
+								float: left;
+								border: 1px solid @listcolor1;
+								width: 50px;
+								height: 55px;
+								border-radius: 10px;
+								text-align: center;
+								line-height: 50px;
+								margin-right: 20px;
+								cursor: pointer;
+								img{
+									width: 100%;
+									height: 100%;
+									background-size: cover;
+									border-radius: 10px;
+								}
+							}
+							select{
+								outline: none;
+							}
+							.createactive_span1{
+								float: left;
+								margin-top:30px;
+							}
+							select{
+								width: 172px;
+								padding:3px 10px;
+								border: 1px solid @listcolor1;
+							}
+							textarea{
+								border: 1px solid @listcolor1;
+								width: 300px;
+								height: 50px;
+								overflow:auto;
+							}
+							.activeinfo_add{
+								width: 80px;
+								height: 55px;
+								border: 1px solid @listcolor1;
+								float: left;
+								text-align: center;
+								line-height: 55px;
+								margin-right: 30px;
+								span{
+									display: block;
+									font-size: 50px;
+									color: @listcolor1;
+									img{
+										width: 80px;
+										height: 55px;
+									}
+									
+								}
+							}
+							i{
+								font-style: normal;
+								color: red;
+							}
+							.textarea{
+								width: 500px;
+								height: 100px;
+							}
+							.ant-input{
+								width: 150px;
+								padding: 4px 10px;
+								border: 1px solid @listcolor1;
+							}
+							strong{
+								margin-left: 5px;
+								color: #f40;
+								font-weight: normal;
+								display: none;
+							}
+							strong.Logo{
+								margin-top: 30px;
+							}
+						}
+						.onestudent_table1{
+							text-align: center;
+						}
+						.createactive_table1{
+							text-align: center;
+						}
+					}
+				}
+				.setperson_title{
+					overflow: hidden;
+					span{
+						color: @listcolor2;
+						padding-bottom: 20px;
+					}
+					div{
+						float: right;
+						span{
+							display: inline-block;
+							margin-right: 30px;
+							cursor: pointer;
+						}
+					}
+				}
+				.add_button{
+					width: 96.7%;
+					padding:10px 20px;
+					border: 1px solid @listcolor1;
+					margin-top: -1px;
+					button{
+						width: 100px;
+						text-align: center;
+						padding: 10px 20px;
+						border-radius: 10px;
+						display: block;
+						margin:0 auto;
+						border: 1px solid @listcolor1;
+						background: @listcolor;
+						color: #fff;
+						outline: none;
+						cursor: pointer;
+						&:disabled{
+							background: #ccc;
+						}
+					}
+				}
+				.prompt{
+					padding: 5px;
+					font-size: 12px;
+					color: red;
+				}
+				.set_list{
+					padding: 20px;
+					line-height: 40px;
+					overflow: hidden;
+					form{
+						float: left;
+						margin-right:200px;
+					}
+					ul{
+						width:300px;
+						li{
+							text-align: right;
+							position: relative;
+							input{
+								width: 100px;
+								margin: 0 10px;
+								padding: 5px;
+								border: 1px solid @listcolor1;
+							}
+							.set_input1{
+								width:40px;
+								margin-right: 0;
+							}
+							.set_input2{
+								width:40px;
+								margin-left: 0;
+							}
+							.set_button{
+								display: block;
+								background: @listcolor;
+								color: #fff;
+								margin-top: 40px;
+								margin-right: 50px;
+								float: right;
+								width: 100px;  
+								text-align: center;
+								padding:  10px;
+								border: 1px solid @listcolor1;
+							}
+							strong{
+								position: absolute;
+								white-space:nowrap;
+								margin-left: 5px;
+								color: #f40;
+								font-weight: normal;
+								display: none;
+							}
+							select{
+								padding: 5px;
+								width: 70px;
+								margin-left: 5px;
+							}
+						}
+						li.buttonLi{
+							overflow: hidden;
+						}
+					}
+					.set_tishi{
+						font-size: 10px;
+						margin-top: 20px;
+						border-top: 2px solid #eee;
+						line-height: 15px;
+						p{
+							line-height: 15px;
+						}
+					}
+				}
+				
+			}
+			.info_list{
+				margin-top: 15px;
+				padding: 20px;
+				background:#fff;
+				overflow:auto;
+				position: relative;
+				p{
+					margin-top: 0;
+					margin-bottom:10px;
+					color: @listcolor2;
+					float: left;
+				}
+				.remove{
+					color: @listcolor;
+				}
+				h1{
+					margin-top: 30px;
+				}
+				.activeinfo_text{
+					padding: 10px;
+					line-height: 30px;
+					p{
+						word-wrap:break-word; 
+						word-break:break-all; 
+					}
+				}
+				.activeinfo_time{
+					overflow: hidden;
+					ul{
+						margin-left: -50px;
+						overflow: hidden;
+						li{
+							float: left;
+							margin-left: 50px;
+							margin-top: 15px;
+							i{
+								font-style: normal;
+								color: #666;
+							}
+						}
+					}
+					table{
+						tr{
+							td{
+								button{
+									color: @listcolor;
+									cursor: pointer;
+									outline: none;
+								}
+							}
+						}
+					}
+				}
+				.setperson_title{
+					overflow: hidden;
+					span{
+						color: @listcolor2;
+						padding-bottom: 20px;
+					}
+					div{
+						float: right;
+						span{
+							display: inline-block;
+							margin-right: 50px;
+						}
+					}
+				}
+				table{
+					width: 100%;
+					border-collapse: collapse;
+					tr{
+						th{
+							text-align: center;
+							padding:10px 20px;
+							border: 1px solid @listcolor1;
+							background: @listcolor;
+							color : #fff;
+						}
+						td{
+							text-align: center;
+							padding:10px 20px;
+							border:1px solid @listcolor1;
+							input[type="text"]{
+								width: 150px; 
+								padding:5px 10px;
+								border: 1px solid @listcolor1;
+							}
+							button{
+								background: none;
+							}
+						}
+						td.onestudent_table1{
+							color: @listcolor2;
+						}
+						td.onestudent_table2{
+							text-align: left;
+							color: @listcolor2;
+							word-wrap:break-word; 
+							word-break:break-all; 
+
+						}
+					}
+ 				}
+ 				.pages{
+					float: left;
+					margin-left: 50%;
+					margin-top: 20px;
+					.tab{
+						float: left;
+						margin-left: -50%;
+						li{
+							float: left;
+							margin: 0 5px;
+							padding: 0;
+							border: 1px solid @listcolor1;
+						}
+						.pagelist{
+							background: @listcolor;
+							a{
+								color: #fff;
+							}
+						}
+						a{
+							display: block;
+							text-decoration: none;
+							padding: 5px ;
+							margin: 0px 5px;
+							color: @listcolor2;
+
+						}	
+					}
+					
+				}
+			}
+			.list{
+				margin-top: 20px;
+				padding: 20px;
+				background: #fff;
+				overflow: auto;
+				position: relative;
+				.userchange_table{
+					input{
+						text-align: center;
+					}
+				}
+				.userchange_button{
+					margin-top: 30px;
+					button{
+						background : @listcolor;
+						color: #fff;
+						display: block;
+						width : 120px;
+						padding:5px 10px;
+						text-align: center;
+						border : 1px solid @listcolor1;
+						margin:0 auto;
+					}
+				}
+				.explain{
+					font-size: 12px;
+					padding: 10px 0;
+					color: #666;
+				}
+				table{
+					width: 100%;
+					border-collapse: collapse;
+					tr{
+						th{
+							text-align: center;
+							padding:10px 20px;
+							border: 1px solid @listcolor1;
+							background: @listcolor;
+							color : #fff;
+						}
+						td{
+							text-align: center;
+							padding:10px 20px;
+							border:1px solid @listcolor1;
+						}
+						.remove{
+							color: @listcolor;
+							outline: none;
+							background: none;
+							cursor: pointer;
+						}
+						td.clubindex_id{
+							color: @listcolor;
+						}
+						
+					}
+ 				}
+				.pages{
+					float: left;
+					margin-left: 50%;
+					margin-top: 20px;
+					.tab{
+						float: left;
+						margin-left: -50%;
+						li{
+							float: left;
+							margin: 0 5px;
+							padding: 0;
+							border: 1px solid @listcolor1;
+						}
+						.pagelist{
+							background: @listcolor;
+							a{
+								color: #fff;
+							}
+						}
+						a{
+							display: block;
+							text-decoration: none;
+							padding: 5px ;
+							margin: 0px 5px;
+							color: @listcolor2;
+						}	
+					}
+				}
+			}
+			.user_list{
+				background: #fff;
+				overflow: hidden;
+				position: relative;
+				.userchange_table{
+					input{
+						text-align: center;
+						outline: none;
+					}
+					strong{
+						display: none;
+						position: absolute;
+						font-weight: normal;
+						color: #f40;
+						margin-top: 5px;
+						margin-left: 5px;
+					}
+				}
+				.table{
+					td{
+						position: relative;
+						strong{
+							position: absolute;
+						}
+					}
+				}
+				.userchange_button{
+					margin-top: 30px;
+					button{
+						display: block;
+						background : @listcolor;
+						color: #fff;
+						width : 120px;
+						padding:5px 10px;
+						text-align: center;
+						line-height: 30px;
+						border : 1px solid @listcolor1;
+						margin:0 auto;
+					}
+				}
+				table{
+					width: 100%;
+					border-collapse: collapse;
+					tr{
+						th{
+							text-align: center;
+							padding:10px 20px;
+							border: 1px solid @listcolor1;
+							background: @listcolor;
+							color : #fff;
+						}
+						td{
+							padding:10px 20px;
+							border:1px solid @listcolor1;
+							button{
+								background:none;
+								color: @listcolor;
+							}
+							input{
+								border: 1px solid @listcolor1;
+								padding: 5px;
+							}
+						}
+						.remove{
+							color: @listcolor;
+							span{
+								display: inline-block;
+								margin:0 5px;
+								button{
+									cursor: pointer;
+									outline: none;
+								}
+							}
+						}
+					}
+ 				}
+ 				.pages{
+					float: left;
+					margin-left: 50%;
+					margin-top: 30px;
+					.tab{
+						float: left;
+						margin-left: -50%;
+						li{
+							float: left;
+							margin: 0 5px;
+							padding: 0;
+							border: 1px solid @listcolor1;
+						}
+						.pagelist{
+							background: @listcolor;
+							a{
+								color: #fff;
+							}
+						}
+						a{
+							display: block;
+							text-decoration: none;
+							padding: 5px ;
+							margin: 0px 5px;
+							color: @listcolor2;
+						}	
+					}
+				}
+			}
+			.set_title{
+				margin-top: 25px;
+				background: #fff;
+				padding: 30px 20px 0;
+				ul{
+					overflow:hidden;
+					li{
+						float: left;
+						padding: 5px 10px;
+						margin: 0 10px;
+						a{
+							color:@listcolor2;
+							text-decoration: none;
+						}
+					}
+					li.set_li{
+						border-bottom: 3px solid @listcolor;
+					}
+				}
+			}
+
+		}
+
+
+
+		.center_box{
+			background: rgba(0,0,0,.6);
+			position: absolute;
+			top:0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-size: cover;
+			background-repeat: no-repeat;
+			.center_container{
+			    width: 600px;
+			    height: 400px;
+			    background: #fff;
+			    position: absolute;
+		   		top:0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				margin: auto;
+			    border-radius: 5px;   
+			    .center_title{
+			    	padding: 20px;
+					overflow: hidden;
+					span{
+						color: @listcolor2;
+						font-size:16px;
+					}
+					div{
+						float: right;
+					}
+				}
+				table{
+					width:560px;
+					border-collapse:collapse;
+					margin: 0 auto;
+					tr{
+						td{
+							padding:15px 20px;
+							border:1px solid @listcolor1;
+							color: @listcolor2;
+							input[type="radio"]{
+								display: inline-block;
+								margin-left:20px; 
+								border: 1px solid @listcolor1;
+							}
+							input[type="text"]{
+								width: 150px; 
+								padding:3px 10px;
+								border: 1px solid @listcolor1;
+							}
+						}
+						.onestudent_table1{
+							text-align: center;
+						}
+						.createactive_table1{
+							text-align: center;
+						}
+					}
+				}
+				.password_title{
+			    	padding: 20px;
+					overflow: hidden;
+					span{
+						color: @listcolor2;
+						font-size:16px;
+					}
+					div{
+						float: right;
+					}
+				}
+				table{
+					width:440px;
+					border-collapse:collapse;
+					margin: 15px auto 0;
+					tr{
+						td{
+							padding:10px;
+							border:1px solid @listcolor1;
+							color: @listcolor2;
+							input[type="radio"]{
+								display: inline-block;
+								margin-left:20px; 
+								border: 1px solid @listcolor1;
+							}
+							input[type="text"]{
+								width: 150px; 
+								padding:10px;
+								border: 1px solid @listcolor1;
+							}
+						}
+						.onestudent_table1{
+							text-align: center;
+						}
+						.createactive_table1{
+							text-align: center;
+						}
+					}
+
+				}
+				.add_button{
+					width: 438px;
+					padding: 10px 0; 
+					border: 1px solid @listcolor1;
+					border-top: 0;
+					margin: 0 auto;
+					button{
+						width: 100px;
+						text-align: center;
+						padding: 10px 20px;
+						border-radius: 10px;
+						display: block;
+						margin:0 auto;
+						border: 1px solid @listcolor1;
+						background: @listcolor;
+						color: #fff;
+						cursor: pointer;
+					}
+					button:disabled{
+						background:#ccc;
+					}
+				}
+			}
+		}
+	}
+}
+
+.ant-calendar {
+	width:267px
+}
+
+.map_box{
+	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background:#fff;
+	z-index: -1;
+	.mapForm{
+		padding:15px 0 20px 0;
+		overflow: hidden;
+		background:#eaeaea;
+		p{
+			float: left;
+		}
+		.searchP{
+			position: relative;
+			margin-left: 20px;
+			.searchlogo{
+				position: absolute;
+				top: 9px;
+				right: 55px;
+			}
+			#Search{
+				padding:10px 20px 10px 40px;
+				background-color: @listcolor;
+				color: #fff;
+			}
+			#keyword{
+				padding: 10px ;
+			}
+		}
+		.okMark{
+			margin-left: 20px;
+			position: relative;
+			.marklogo{
+				position:absolute;
+				top: 9px;
+				right: 55px;
+			}
+			#biao{
+				padding:10px 20px 10px 40px;
+				background-color: #e26841;
+				color: #fff;
+			}
+		}
+		.return{
+			margin-left: 20px;
+			position: relative;
+			.returnlogo{
+				position:absolute;
+				top: 9px;
+				right: 55px;
+			}
+			#fan{
+				padding:10px 20px 10px 40px;
+				color: @listcolor;
+				background: none;
+			}
+		}
+		.coordinate{
+			padding: 10px;
+			i{
+				display: inline-block;
+				font-style: normal;
+				margin-left: 50px;
+				color: @listcolor2;
+			}
+		}
+		
+	}
+}
+
+.trActive{
+	background: (@mouseover + 20);
+}
+.trActive1{
+	color:#e26841;
+	text-decoration: underline;
+}
+.trBg{
+	background:#f1f1f1;
+}
+
+.ant-calendar-picker-icon{
+	display:none
+}

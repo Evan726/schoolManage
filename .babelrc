@@ -1,0 +1,12 @@
+{
+	"presets": ["es2015", "react", "stage-0"],
+	"plugins": [
+		"add-module-exports", 
+		["import", {
+			"style": true,
+			"libraryDirectory": "component",
+			"libraryName": "antd",
+			"camel2DashComponentName": false
+		}],
+	]
+}
